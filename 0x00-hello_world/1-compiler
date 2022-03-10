@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -c $FILe > $(echo $CFILE|cut -d"." -fl).o

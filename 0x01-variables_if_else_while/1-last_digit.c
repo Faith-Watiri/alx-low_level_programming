@@ -2,8 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - main
- * Description: Get a random number and check its last digit,
+ * main - prints the last digit of n and prints out whether it is
+ * greater than 5, 0, or less than 6
  * Return: 0
  */
 int main(void)
@@ -13,8 +13,9 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last = n % 10;
 
+	last = n % 10;
+	printf("Last digit of %i is %i and is", n, last);
 	if (last > 5)
 		printf("Last digit of %i is %i and is greater than 5\n", n, last);
 	else if (last == 0)

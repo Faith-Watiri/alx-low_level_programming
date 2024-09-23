@@ -8,13 +8,12 @@
  */
 int sum_listint(listint_t *head)
 {
-    int sum = 0;
+int sum = 0;
 
-    while (head != NULL)
-    {
-        sum += head->n; /* Add the value of n to the sum */
-        head = head->next; /* Move to the next node */
-    }
-
-    return (sum);
+while (head != NULL)
+{
+sum += head->n; /* Add the value of n to the sum */
+head = head->next; /* Move to the next node */
+}
+return (sum);
 }
